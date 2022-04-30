@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+    background-color: rgb(219, 159, 169);
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
+
+.face {
+    width: 250px;
+    height: 200px;
+    border-radius: 45%;
+    background-color: whitesmoke;
+    z-index: 0;
+    border: solid 2px black;
+}
+
+.leftEar {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: whitesmoke;
+    border-radius: 10%;
+    transform: translateX(-250px) translateY(5px) rotate(10deg);
+    z-index: 5;
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+}
+
+.rightEar {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: whitesmoke;
+    border-radius: 10%;
+    transform: translateX(-166px) translateY(5px) rotate(80deg);
+    z-index: 4;
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+}
+
+.eyes:nth-child(1),
+.eyes:nth-child(2) {
+    width: 15px;
+    height: 20px;
+    background: black;
+    border-radius: 45%;
+}
+
+.eyes:nth-child(1) {
+    position: relative;
+    transform: translateX(-360px) translateY(100px);
+    z-index: 20;
+}
+
+.eyes:nth-child(2) {
+    position: relative;
+    transform: translateX(-240px) translateY(80px);
+    z-index: 20;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+.mask {
+    width: 100px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgb(60, 168, 201), white);
+    border: solid 1.5px rgb(0, 0, 0);
+    z-index: 30;
+    transform: translateX(-355px) translateY(135px);
+    border-radius: 0% 0% 30% 30%;
+}
+
+.moustache:nth-child(1),
+.moustache:nth-child(2),
+.moustache:nth-child(3),
+.moustache:nth-child(4),
+.moustache:nth-child(5),
+.moustache:nth-child(6) {
+    width: 40px;
+    height: 1px;
+    background: black;
+    border-radius: 50%;
+}
+
+.moustache:nth-child(1) {
+    transform: translateX(-635px) translateY(130px) rotate(10deg);
+}
+
+.moustache:nth-child(2) {
+    transform: translateX(-635px) translateY(140px);
+    height: 1.7px;
+}
+
+.moustache:nth-child(3) {
+    transform: translateX(-635px) translateY(150px) rotate(-15deg);
+}
+
+.moustache:nth-child(4) {
+    transform: translateX(-385px) translateY(150px) rotate(10deg);
+}
+
+.moustache:nth-child(5) {
+    transform: translateX(-385px) translateY(140px);
+    height: 1.2px;
+}
+
+.moustache:nth-child(6) {
+    transform: translateX(-385px) translateY(128px) rotate(-15deg);
+}
+
+.maskStrip:nth-child(1),
+.maskStrip:nth-child(2),
+.maskStrip:nth-child(3),
+.maskStrip:nth-child(4) {
+    width: 90px;
+    height: 1px;
+    background: rgb(0, 0, 0);
+}
+
+.maskStrip:nth-child(1) {
+    transform: translateX(-652px) translateY(130px) rotate(10deg);
+}
+
+.maskStrip:nth-child(2) {
+    transform: translateX(-620px) translateY(170px) rotate(-10deg);
+    width: 47px;
+}
+
+.maskStrip:nth-child(3) {
+    transform: translateX(-490px) translateY(128px) rotate(-10deg);
+    width: 88px;
+}
+
+.maskStrip:nth-child(4) {
+    transform: translateX(-492px) translateY(166px) rotate(10deg);
+    width: 60px;
+}
+
+.bow:nth-child(1),
+.bow:nth-child(2) {
+    position: relative;
+    width: 55px;
+    height: 50px;
+    background: red;
+    border: solid 1px black;
+    border-radius: 45%;
+    z-index: 10;
+}
+
+.bow:nth-child(1) {
+    transform: translateX(-420px) translateY(0px);
+}
+
+.bow:nth-child(2) {
+    transform: translateX(-355px) translateY(0px);
+}
+
+.bowCircle:nth-child(1),
+.bowCircle:nth-child(2),
+.bowCircle:nth-child(3) {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    z-index: 40;
+    border-bottom: rgb(0, 0, 0) solid 1px;
+    border-left: rgb(0, 0, 0) solid 1px;
+    border-right: rgb(0, 0, 0) solid 1px;
+}
+
+.bowCircle:nth-child(1) {
+    transform: translateX(-330px) translateY(55px);
+}
+
+.bowCircle:nth-child(2) {
+    transform: translateX(-365px) translateY(7px);
+}
+
+.Circle {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background: red;
+    border-radius: 50%;
+    z-index: 40;
+    border: black solid 1px;
+    transform: translateX(-560px) translateY(37px);
+}
+
+@keyframes blink {
+    0% {
+        width: 15px;
+        height: 30px;
+        background: black;
+        border-radius: 45%;
+        transform: translateX(-240px) translateY(70px);
+    }
+
+    100% {
+        width: 15px;
+        height: 10px;
+        transform: translateX(-240px) translateY(90px);
+        background: black;
+        border-radius: 45%;
+    }
+}
+
+h4 {
+    font-family: Pacifico;
+    font-size: 35px;
+    position: relative;
+    margin-left: 36%;
+    margin-right: 15%;
+    letter-spacing: 4px;
+}
